@@ -3,8 +3,18 @@ This is a simple flow that listens for xml files arriving in the data/in folder,
 
 Tutorial from article https://blogs.mulesoft.com/dev/anypoint-platform-dev/using-xpath-expressions-on-an-xml-document-with-namespaces/
 
-The file contents use a namespace xmlns="http://checkout.google.com/schema/2 which means all element names within that file belong to that namespace by default.
-
+The file contents use a namespace xmlns="http://checkout.google.com/schema/2 which means all element names within that file belong to that namespace by default.  
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<deliver-order xmlns="http://checkout.google.com/schema/2"
+    google-order-number="841171949013218">
+    <tracking-data>
+        <carrier>UPS</carrier>
+        <tracking-number>Z5498W45987123684</tracking-number>
+    </tracking-data>
+    <send-email>true</send-email>
+</deliver-order>
+```
 Therefore, when we are looking for elements in an xpath expression, we need to use that namespace.
 
 We use the name space manager:
