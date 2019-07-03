@@ -1,5 +1,5 @@
+# Parsing XML that has a Namespace and File IO
 This is a simple flow that listens for xml files arriving in the data/in folder, parses the contents and detects whether the carrier is UPS, FedEx or other.
-
 
 Tutorial from article https://blogs.mulesoft.com/dev/anypoint-platform-dev/using-xpath-expressions-on-an-xml-document-with-namespaces/
 
@@ -24,6 +24,7 @@ xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml
 xsi:schemaLocation=
 "http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd">
 
+## Usage
 To see the app in action, drop some xml files into the data/in folder.  
 The xml is parsed, you'll see log messages and the file is then moved to the data/processed folder.
 
