@@ -1,4 +1,4 @@
-# Parsing XML that has a Namespace and File IO
+# Parsing XML that has a Namespace
 This is a simple flow that listens for xml files arriving in the data/in folder, parses the contents and detects whether the carrier is UPS, FedEx or other.
 
 Tutorial from article https://blogs.mulesoft.com/dev/anypoint-platform-dev/using-xpath-expressions-on-an-xml-document-with-namespaces/
